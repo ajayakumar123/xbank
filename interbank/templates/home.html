@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Welcome to X bank</h1>
+    <h2>{{ current_user.username }}</h2>
+    {% if current_user.is_authenticated %}
+        <h3>Account type {{ current_user.account_type }}</h3>
+        <h3>Balance Amount {{ current_user.balance_amount }}</h3>
+    {% else %}
+        
+    {% endif %}
+{% endblock content %}
+
+
+
+
+
